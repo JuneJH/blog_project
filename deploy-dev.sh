@@ -3,7 +3,7 @@ echo Deploy Project
 
 # 获取最新版代码
 git pull
-
+yarn
 yarn docs:build
 # 强制重新编译容器
 # docker-compose down

@@ -11,6 +11,8 @@
     "docs:build": "vuepress build docs"
   },
   "dependencies": {
-    "github-webhook-handler": "^1.0.0"
+    "github-webhook-handler": "^1.0.0",
+    "vuepress-plugin-autobar": "boboidream/vuepress-bar",
+    "vuepress-sidebar-atuo": "^1.0.4"
   }
 }
