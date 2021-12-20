@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "github-webhook-handler": "^1.0.0",
+    "lru-cache": "^6.0.0",
     "vuepress-bar": "^0.4.4",
     "vuepress-plugin-autobar": "boboidream/vuepress-bar",
     "vuepress-sidebar-atuo": "^1.0.4"
