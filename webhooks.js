@@ -2,7 +2,7 @@ var http = require('http')
 var createHandler = require('github-webhook-handler')
 var handler = createHandler({ path: '/blog', secret: '6L7_SuF6rDSSbi@' })
 // 上面的 secret 保持和 GitHub 后台设置的一致
-
+const PORT = 8080;
 function run_cmd(cmd, args, callback) {
     var spawn = require('child_process').spawn;
     var child = spawn(cmd, args);
@@ -20,8 +20,8 @@ http.createServer(function (req, res) {
         res.statusCode = 404
         res.end('no such location')
     })
-}).listen(8080,() =>{
-    console.log('WebHooks Listern at 7777');
+}).listen(PORT,() =>{
+    console.log('WebHooks Listern at ',PORT);
 })
 
 handler.on('error', function (err) {

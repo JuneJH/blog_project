@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React中的事件 | JuneJH</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.fde6062e.js" as="script"><link rel="preload" href="/assets/js/2.8c11f49f.js" as="script"><link rel="preload" href="/assets/js/24.881db85a.js" as="script"><link rel="prefetch" href="/assets/js/10.0d1a1bb7.js"><link rel="prefetch" href="/assets/js/11.e836e3a6.js"><link rel="prefetch" href="/assets/js/12.09ecb58d.js"><link rel="prefetch" href="/assets/js/13.457ee6c4.js"><link rel="prefetch" href="/assets/js/14.bb866ec7.js"><link rel="prefetch" href="/assets/js/15.be6f723b.js"><link rel="prefetch" href="/assets/js/16.f31441f6.js"><link rel="prefetch" href="/assets/js/17.02895104.js"><link rel="prefetch" href="/assets/js/18.ee1a858e.js"><link rel="prefetch" href="/assets/js/19.03f32556.js"><link rel="prefetch" href="/assets/js/20.9e60110c.js"><link rel="prefetch" href="/assets/js/21.4111e3f6.js"><link rel="prefetch" href="/assets/js/22.9cef2615.js"><link rel="prefetch" href="/assets/js/23.26680edf.js"><link rel="prefetch" href="/assets/js/25.68c20fcd.js"><link rel="prefetch" href="/assets/js/26.83ff6cb7.js"><link rel="prefetch" href="/assets/js/27.6d3a3e21.js"><link rel="prefetch" href="/assets/js/28.681189a4.js"><link rel="prefetch" href="/assets/js/3.075414dd.js"><link rel="prefetch" href="/assets/js/4.fbcf4621.js"><link rel="prefetch" href="/assets/js/5.ec4b3f90.js"><link rel="prefetch" href="/assets/js/6.27888615.js"><link rel="prefetch" href="/assets/js/7.860b17c3.js"><link rel="prefetch" href="/assets/js/8.d40d60a7.js"><link rel="prefetch" href="/assets/js/9.9d5dca8c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">JuneJH</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/1.html" class="nav-link">
+  vue相关
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/1.html" class="nav-link">
+  vue相关
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Blog</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/1.html" class="sidebar-link">vue 实现响应式方案</a></li><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>React</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/react/1.关于React使用.html" class="sidebar-link">React</a></li><li><a href="/blog/react/10.关于Redux的使用.html" class="sidebar-link">Redux 数据管理</a></li><li><a href="/blog/react/11.关于react与redux配合使用.html" class="sidebar-link">Redux与React结合使用</a></li><li><a href="/blog/react/12.关于redux与react-router配合使用.html" class="sidebar-link">redux与react-router配合使用</a></li><li><a href="/blog/react/13.关于dva的使用.html" class="sidebar-link">Dvajs使用</a></li><li><a href="/blog/react/14. 关于umijs的使用.html" class="sidebar-link">关于Umijs的使用</a></li><li><a href="/blog/react/15.结合Typescript使用.html" class="sidebar-link">typescirpt</a></li><li><a href="/blog/react/16.关于fiber.html" class="sidebar-link">关于Fiber</a></li><li><a href="/blog/react/17.关于react18.html" class="sidebar-link">关于React18</a></li><li><a href="/blog/react/18.[手写]简易redux实现.html" class="sidebar-link">简易Redux实现</a></li><li><a href="/blog/react/19.[手写]简易react-router实现.html" class="sidebar-link">/blog/react/19.[手写]简易react-router实现.html</a></li><li><a href="/blog/react/2.关于React.createElement&amp;JSX.html" class="sidebar-link">React.createElement 和 JSX</a></li><li><a href="/blog/react/20.[源码分析] react源码分析.html" class="sidebar-link">React 源码分析</a></li><li><a href="/blog/react/3. 关于React生命周期.html" class="sidebar-link">React生命周期</a></li><li><a href="/blog/react/4.关于React核心概念.html" class="sidebar-link">React 核心概念</a></li><li><a href="/blog/react/5.关于React事件.html" class="active sidebar-link">React中的事件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/react/5.关于React事件.html#react-事件触发时机" class="sidebar-link">React 事件触发时机</a></li><li class="sidebar-sub-header"><a href="/blog/react/5.关于React事件.html#阻止事件冒泡" class="sidebar-link">阻止事件冒泡</a></li><li class="sidebar-sub-header"><a href="/blog/react/5.关于React事件.html#事件对象" class="sidebar-link">事件对象</a></li><li class="sidebar-sub-header"><a href="/blog/react/5.关于React事件.html#补充" class="sidebar-link">补充</a></li></ul></li><li><a href="/blog/react/6.关于React渲染过程.html" class="sidebar-link">React 渲染过程</a></li><li><a href="/blog/react/7.关于Hook使用.html" class="sidebar-link">Hook使用</a></li><li><a href="/blog/react/8.关于React-Router使用.html" class="sidebar-link">React-Router</a></li><li><a href="/blog/react/9.关于React-Router原理与实践.html" class="sidebar-link">原理与实践</a></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react中的事件"><a href="#react中的事件" class="header-anchor">#</a> React中的事件</h1> <blockquote><p>React 组件中的事件就是属性(该属性为一个函数)的调用</p> <p>React 内置组件的事件大多数是监听根组件,然后依次调用React中的事件队列</p></blockquote> <h2 id="react-事件触发时机"><a href="#react-事件触发时机" class="header-anchor">#</a> React 事件触发时机</h2> <ul><li>React 组件的事件是通过自我的调用触发</li> <li>React 内置组件的事件是先进行收集事件队列然后通过监听根组件依次触发</li> <li>不支持事件冒泡或者一些特殊的事件,则只有在当前内置组件的真实DOM上进行处理</li></ul> <ol><li>示例</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>
+    <span class="token keyword">const</span> container <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    container<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token parameter">e</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+         console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;真实DOM根元素点击事件触发&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>React<span class="token punctuation">.</span>StrictMode<span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>App<span class="token operator">/</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>React<span class="token punctuation">.</span>StrictMode<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+        container
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+    <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>div onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token parameter">e</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置React组件div点击事件触发&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+            <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置组件button点击事件触发&quot;</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+            点击事件
+            <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>输出结果</strong></p> <ol><li><p>真实DOM根元素点击事件触发</p></li> <li><p>内置组件button点击事件触发</p></li> <li><p>内置React组件div点击事件触发</p></li> <li><p>结论</p></li></ol> <ul><li>react中事件是经过冒泡到根组件后再依次触发react事件队列(真实DOM事件最先执行)</li></ul> <h2 id="阻止事件冒泡"><a href="#阻止事件冒泡" class="header-anchor">#</a> 阻止事件冒泡</h2> <ul><li>在原生事件中通过<code>e.stopPropagation();</code>方法进行阻止事件冒泡</li> <li>react中通过该方式<code>e.stopPropagation();</code>是阻止react事件队列的后续事件执行</li></ul> <ol><li>示例</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>
+    <span class="token keyword">const</span> container <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;root&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    document<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;document事件:点击了&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    container<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;真实DOM根元素点击事件触发&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>React<span class="token punctuation">.</span>StrictMode<span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>App <span class="token operator">/</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>React<span class="token punctuation">.</span>StrictMode<span class="token operator">&gt;</span><span class="token punctuation">,</span>
+      container
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>div onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置React组件div点击事件触发&quot;</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置组件button点击事件触发&quot;</span><span class="token punctuation">)</span>
+          e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          点击事件
+              <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</code></pre></div><p><strong>输出结果</strong></p> <ol><li><p>真实DOM根元素点击事件触发</p></li> <li><p>内置组件button点击事件触发</p></li> <li><p>结论</p></li></ol> <ul><li>由于react事件是在根组件事件执行之后,所以无论如何都无法阻止</li></ul> <h2 id="事件对象"><a href="#事件对象" class="header-anchor">#</a> 事件对象</h2> <ul><li>react中使用的事件对象为React自我实现的并非原生事件对象</li> <li>react中的事件对象会重用(避免异步使用该对象)</li> <li>通过<code>nativeEvent</code>获取真实事件对象</li></ul> <ol><li>示例</li></ol> <div class="language-js extra-class"><pre class="language-js"><code>
+    <span class="token keyword">let</span> event <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token operator">&lt;</span>div onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token parameter">e</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置React组件div点击事件触发&quot;</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;react事件对象是否重用&quot;</span><span class="token punctuation">,</span>e <span class="token operator">===</span> event<span class="token punctuation">)</span> 
+      <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+        <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;内置组件button点击事件触发&quot;</span><span class="token punctuation">)</span>
+          console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;真实事件对象&quot;</span><span class="token punctuation">,</span>e<span class="token punctuation">.</span>nativeEvent<span class="token punctuation">)</span>
+         event <span class="token operator">=</span> e<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+          点击事件
+              <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+</code></pre></div><h2 id="补充"><a href="#补充" class="header-anchor">#</a> 补充</h2> <ul><li>对于不支持事件冒泡和一些特殊的事件,直接在元素上进行处理</li> <li><code>e.stopImmediatePropagetion()</code>原生方法用于阻止该元素上剩余的事件处理函数</li> <li><code>nativeEvent</code>是react的事件对象用于获取真实事件对象的属性</li> <li><code>persist()</code>用于持久化存储react对象</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/react/4.关于React核心概念.html" class="prev">
+        React 核心概念
+      </a></span> <span class="next"><a href="/blog/react/6.关于React渲染过程.html">
+        React 渲染过程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.fde6062e.js" defer></script><script src="/assets/js/2.8c11f49f.js" defer></script><script src="/assets/js/24.881db85a.js" defer></script>
+  </body>
+</html>
