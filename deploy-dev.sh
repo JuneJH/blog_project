@@ -3,6 +3,9 @@ echo Deploy Project
 
 # 获取最新版代码
 git pull
+cd docs
+git pull
+cd ..
 npm i
 yarn docs:build
 # 强制重新编译容器
