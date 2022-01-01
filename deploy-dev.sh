@@ -2,7 +2,9 @@ echo Deploy Project
 # docker-compose up -d --force-recreate --build
 
 # 获取最新版代码
+cd docs
 git pull
+cd ..
 npm i
 yarn docs:build
 # 强制重新编译容器
