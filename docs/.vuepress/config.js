@@ -2,8 +2,8 @@ module.exports = {
   title:"JuneJH",
     themeConfig: {
       nav: [
-        { text: '首页', link: '/' },
-        { text: 'vue相关', link: '/blog/1.html' },
+        { text: 'GitHub', link: 'https://github.com/JuneJH' },
+        // { text: '项目相关', link: '/' },
       ],
       sidebar: 'auto'
     },
