@@ -2,7 +2,7 @@
 home: true
 heroImage: /city.jpeg
 actionText: 笔记阅读
-actionLink: /一些问题/1.问题.html
+actionLink: /note/一些问题/1.问题.html
 description: 天行健 君子以自强不息 地势坤 君子以厚德载物
 features:
 - title: 关于Javascript
