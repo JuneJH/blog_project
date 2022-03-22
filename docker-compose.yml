@@ -1,10 +1,10 @@
 version: '3.1'
 services:
-  app-pm:
-      build: ./webhooks
-      image: keymetrics/pm2:latest-alpine
-      ports:
-        - "8080:8080"
+  #app-pm:
+   #   build: ./webhooks
+    #  image: keymetrics/pm2:latest-alpine
+     # ports:
+      #  - "8080:8080"
   nginx:
     restart: always
     image: nginx

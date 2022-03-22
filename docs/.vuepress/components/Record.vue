@@ -8,8 +8,8 @@
 
 <style scoped>
 .recordContainer{
-    position: absolute;
-    bottom: 0px;
+    width:100%;
+    margin-top:180px;
     text-align: center;
     font-size: 13px;
 }
