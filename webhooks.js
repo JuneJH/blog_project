@@ -15,7 +15,6 @@ function run_cmd(cmd, args, callback) {
 // run_cmd('sh', ['./deploy-dev.sh'], function(text){ console.log(text) });
 
 http.createServer(function (req, res) {
-
     handler(req, res, function (err) {
         res.statusCode = 404
         res.end('no such location')
@@ -33,7 +32,7 @@ handler.on('*', function (event) {
     console.log('Received *', event.payload.action);
     //   run_cmd('sh', ['./deploy-dev.sh'], function(text){ console.log(text) });
 })
- 
+// 对push操作监听
 handler.on('push', function (event) {
     console.log('Received a push event for %s to %s',
         event.payload.repository.name,
