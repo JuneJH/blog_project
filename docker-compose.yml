@@ -9,7 +9,7 @@ services:
     restart: always
     image: nginx
     ports:
-      - 80:80
+      - 8080:8080
     volumes:
       - ./nginx/conf.d/:/etc/nginx/conf.d
       - ./docs/.vuepress/dist:/var/www/html/
