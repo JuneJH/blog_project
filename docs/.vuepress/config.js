@@ -1,3 +1,15 @@
+const path = require("path");
+const p = path.resolve(__dirname,"../note")
+const autobar_options = {
+  rootDir: p,
+  stripNumbers : true,
+  maxLevel : 2,
+  navPrefix : "nav",
+  skipEmptySidebar : true,
+  skipEmptyNavbar : true,
+  multipleSideBar : true,
+  setHomepage : 'hide' | 'toGroup' | 'top'
+};
 module.exports = {
   title: "JuneJH",
   themeConfig: {
@@ -22,5 +34,7 @@ module.exports = {
     ],
     sidebar: 'right'
   },
-  plugins: ['autobar']
-}
+  plugins: ['autobar',{
+    rootDir:p
+  }]
+} 
